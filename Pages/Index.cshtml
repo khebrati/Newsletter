@@ -1,0 +1,11 @@
+﻿@page
+@model Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@{
+    foreach (var articleOverviewModel in Model.Articles)
+    {
+        <partial name="/Pages/_ArticleOverview.cshtml" model="articleOverviewModel"></partial>
+    }
+}

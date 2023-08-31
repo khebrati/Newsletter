@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  /*! text-align: center; */
+  color: #222831;
+  /*! margin: ; */
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0 10%;
+    min-width: 700px;
+  }
+h1 {
+    font-size: 421%;
+    font-family: 'Handjet', cursive;
+}
+header {
+  position: fixed;
+  top: 2%;
+  width: 80%;
+}
+.HeaderText {
+  background-color: #222831;
+  color: white;
+  /*! width: ; */
+  /*! height: 12%; */
+  padding: 1% 0;
+  text-align: center
+}
+nav {
+  background-color: #00ADB5;
+}
+a{
+  text-decoration: none;
+}
+ul, ol{
+  list-style: none;
+}
+.Pages {
+  overflow: auto;
+  width: 100%;
+}
+.NavLink{
+  color: white;
+  padding: 1%;
+  float: left;
+  font-size: 130%;
+}
+
+.NavLink:hover {
+  color: #00ADB5;
+  background-color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 4%;
+  width: 80%;
+  padding: 1% 0;
+  background-color: #222831;
+  text-align: center
+}
+.FooterText {
+  color: white;
+  background-color: #222831;
+  font-size: 150%;
+}
+
+.Rendered {
+  position: fixed;
+  top: 185px;
+  width: 80%;
+  /*! bottom: 100px; */
+}
+
+.RightPostColumn{
+  float: right;
+  padding: 2%;
+  margin: 1%;
+}
+
+.LeftPostColumn {
+  float: left;
+  clear: left;
+  padding: 0 1%;
+  width: 40%;
+}
+.BottomPostCulomn {
+  clear: left;
+}
+
+.PostForm {
+  height: 100%;
+  width: 100%;
+}
+.field-validation-error {
+  /*! clear: right; */
+  color: red;
+}
+
+.ArticleImageLabel {
+  float: right;
+  /*! clear: left; */
+}
+.ArticleImage {
+  float: right;
+  clear: right;
+}
+.BottomPostColumn {
+  /*! display: block; */
+  clear: left;
+  margin: 4% 0;
+}
+label,button{
+  display: block;
+}
+#Input_Body {
+  width: 100%;
+  /*! min-height: auto; */
+  /*! height: auto; */
+  /*! min-width: ; */
+  /*! padding: 6% 0; */
+  /*! min-height: 20px; */
+  min-height: 100px;
+}
+
+.TopPostColumn {
+  overflow: auto;
+  width: 100%;
+}
+.ArticleSubmit {
+  /*! width: 8%; */
+  padding: 1%;
+}
+.RightPostColumn, .LeftPostColumn{
+  border:solid 3px #222831;
+}
+.TitleAndLabel {
+  margin: 4% 0;
+  /*! margin-bottom: 3%; */
+}
+#Input_Title {
+  /*! width: ; */
+  width: 95%;
+}
+.CategoryAndLabel {
+  margin: 4% 0;
+}
+.submit-validated-message{
+  color: green;
+}

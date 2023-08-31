@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true">
+    <title>@ViewData["Title"] - Newsletter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <h1 class="HeaderText">
+            A very cool Weblog
+        </h1>
+
+        <nav>
+            <ul class="Pages">
+                <li><a href="/" class="NavLink">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/Post" class="NavLink">
+                        Post
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Rendered">
+        @RenderBody()
+    </div>
+</body>
+
+<footer>
+<p class="FooterText">
+Made with love &hearts;
+</p>
+</footer>
+
+</html>

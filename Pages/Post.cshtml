@@ -1,0 +1,25 @@
+﻿@page
+@model Pages.PostModel
+@{
+    ViewData["Title"] = "Post";
+}
+<form asp-page="Post">
+    <div class="TopPostColumn">
+        <div class="RightPostColumn">
+        <label for="Input.Image" class="ArticleImageLabel">A picture for your Article</label><input class="ArticleImage" type="file" name="Input.Image" id="input.Image"  accept="image">
+    </div>
+    <div class="LeftPostColumn">
+        <div class="TitleAndLabel">
+            <label asp-for="Input.Title"></label><input asp-for="Input.Title" /><span asp-validation-for="Input.Title"></span>
+        </div>
+       <div class="CategoryAndLabel">
+         <label asp-for="Input.Category"></label><select asp-for="Input.Category"asp-items="Html.GetEnumSelectList<@Data.ArticleCategory>()"></select>
+       </div>
+    </div>
+    </div>
+    <div class="BottomPostColumn">
+        <label class="ArticleLabel" asp-for="Input.Body">Write your article here</label><textarea asp-for="Input.Body"></textarea><span asp-validation-for="Input.Body"></span><button class="ArticleSubmit" type="submit">submit</button>
+    </div>
+    
+</form>
+
