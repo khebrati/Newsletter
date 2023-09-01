@@ -18379,6 +18379,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/erfan/IT/Source/Weblog/Pages/Article.cshtml",
+      "TargetPath": "Pages\\Article.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/erfan/IT/Source/Weblog/Pages/_ArticleOverview.cshtml",
       "TargetPath": "Pages\\_ArticleOverview.cshtml",
       "FileKind": "mvc"

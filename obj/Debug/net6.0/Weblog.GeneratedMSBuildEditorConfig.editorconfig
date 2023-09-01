@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = /home/erfan/IT/Source/Weblog
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/erfan/IT/Source/Weblog/Pages/Article.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJ0aWNsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/erfan/IT/Source/Weblog/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
