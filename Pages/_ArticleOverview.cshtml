@@ -1,13 +1,17 @@
 @model Pages.ArticleOverviewModel
 <div class="article-overview">
-    <h3 class="article-overview-title">@Model.Title</h3>
-    <h4 class="article-overview-author">By @Model.AuthorName</h4><span class="article-overview-category">@Model.Category</span>
+    <div class="article-overview-title-author-category">
+        <h3 class="article-overview-title">@Model.Title</h3>
+    <div class="article-overview-author-category">
+        <h4 class="article-overview-author">By @Model.AuthorName</h4><span class="article-overview-category">@Model.Category</span>
+    </div>
+    </div>
     @if (Model.ImageUrl is null)
     {
-        <img src="Images/no-image.webp">
+        <img class="article-overview-image" src="Images/no-image.webp">
     }
     else
     {
-        <img src="@Model.ImageUrl">
+        <img class="article-overview-image" src="@Model.ImageUrl">
     }
 </div>

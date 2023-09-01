@@ -71,28 +71,10 @@ footer {
   top: 185px;
   width: 80%;
   /*! bottom: 100px; */
+  height: 60%;
 }
 
-.RightPostColumn{
-  float: right;
-  padding: 2%;
-  margin: 1%;
-}
 
-.LeftPostColumn {
-  float: left;
-  clear: left;
-  padding: 0 1%;
-  width: 40%;
-}
-.BottomPostCulomn {
-  clear: left;
-}
-
-.PostForm {
-  height: 100%;
-  width: 100%;
-}
 .field-validation-error {
   /*! clear: right; */
   color: red;
@@ -106,55 +88,28 @@ footer {
   float: right;
   clear: right;
 }
-.BottomPostColumn {
-  /*! display: block; */
-  clear: left;
-  margin: 4% 0;
-}
-label,button{
-  display: block;
-}
-#Input_Body {
-  width: 100%;
-  /*! min-height: auto; */
-  /*! height: auto; */
-  /*! min-width: ; */
-  /*! padding: 6% 0; */
-  /*! min-height: 20px; */
-  min-height: 100px;
-}
 
-.TopPostColumn {
-  overflow: auto;
-  width: 100%;
-}
-.ArticleSubmit {
-  /*! width: 8%; */
-  padding: 1%;
-}
-.RightPostColumn, .LeftPostColumn{
-  border:solid 3px #222831;
-}
-.TitleAndLabel {
-  margin: 4% 0;
-  /*! margin-bottom: 3%; */
-}
-#Input_Title {
-  /*! width: ; */
-  width: 95%;
-}
-.CategoryAndLabel {
-  margin: 4% 0;
-}
 .submit-validated-message{
   color: green;
 }
 
-#article-overviews {
+#article-overviews-scroll {
   position: fixed;
   width: 50%;
   left: 25%;
-  text-align: center;
   height: 55%;
   overflow: auto;
+}
+
+.article-overview-image {
+  width: 25%;
+  height: 25%;
+}
+.article-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-overview-title-author-category {
+  flex-grow: 3;
 }

@@ -13,7 +13,7 @@ public class ArticleOverviewModel
     public string AuthorName {
         get
         {
-            return "A persion";
+            return "A person";
         }
     }
 
