@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VIzP5aaii8QsGW/YJq+zECN9sT73nE9OhAPzrsQWO6A=",
+  "Hash": "qrTJLAfii/EFPYhHBr2D8XInVY9EtpAgoJ1ni7zWIpw=",
   "Source": "Weblog",
   "BasePath": "_content/Weblog",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Images/HeaderImage.jpg"
+    },
+    {
+      "Identity": "/home/erfan/IT/Source/Weblog/wwwroot/Images/no-image.webp",
+      "SourceId": "Weblog",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/erfan/IT/Source/Weblog/wwwroot/",
+      "BasePath": "_content/Weblog",
+      "RelativePath": "Images/no-image.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/no-image.webp"
     },
     {
       "Identity": "/home/erfan/IT/Source/Weblog/wwwroot/js/site.js",

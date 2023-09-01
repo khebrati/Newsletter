@@ -149,3 +149,12 @@ label,button{
 .submit-validated-message{
   color: green;
 }
+
+#article-overviews {
+  position: fixed;
+  width: 50%;
+  left: 25%;
+  text-align: center;
+  height: 55%;
+  overflow: auto;
+}

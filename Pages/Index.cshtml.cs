@@ -3,14 +3,23 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Pages;
 public class ArticleOverviewModel
-    {
-        public string Title { get; set; }
+{
+    public string Title { get; set; }
 
-        public string? ImageUrl { get; set; }
-        
-        public Data.ArticleCategory Category { get; set; }
-        
+    public string? ImageUrl { get; set; }
+
+    public Data.ArticleCategory Category { get; set; }
+    //TODO: authentication
+    public string AuthorName {
+        get
+        {
+            return "A persion";
+        }
     }
+
+
+
+}
 public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
@@ -48,5 +57,5 @@ public class IndexModel : PageModel
     {
 
     }
-    
+
 }

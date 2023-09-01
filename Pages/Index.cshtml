@@ -3,9 +3,11 @@
 @{
     ViewData["Title"] = "Home page";
 }
-@{
+<div id="article-overviews">
+    @{
     foreach (var articleOverviewModel in Model.Articles)
     {
         <partial name="/Pages/_ArticleOverview.cshtml" model="articleOverviewModel"></partial>
     }
 }
+</div>
