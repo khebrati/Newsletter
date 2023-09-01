@@ -71,7 +71,7 @@ footer {
   top: 185px;
   width: 80%;
   /*! bottom: 100px; */
-  height: 60%;
+  height: 55%;
 }
 
 
@@ -112,4 +112,58 @@ footer {
 }
 .article-overview-title-author-category {
   flex-grow: 3;
+}
+
+#article-post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+.TopPostColumn {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.BottomPostColumn {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+#Input_Body {
+  flex: 1;
+  margin: 1% 0;
+}
+.ArticleLabel {
+}
+.ArticleSubmit {
+  width: 8%;
+  height: 10%;
+  margin: 1% 0;
+}
+.field-validation-valid {
+}
+.RightPostColumn {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.LeftPostColumn {
+  order: 1;
+}
+.LeftPostColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /*! gap: 29%; */
+  justify-content: space-evenly;
+}
+
+#Input_Title {
+  margin: 0 1%;
+}
+#Input_Category {
+  margin: 0 1%;
 }
