@@ -102,16 +102,17 @@ footer {
 }
 
 .article-overview-image {
-  width: 25%;
-  height: 25%;
+  width: 30%;
+  height: 30%;
+  flex: 2;
+  margin: 0 2%;
 }
 .article-overview {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .article-overview-title-author-category {
-  flex-grow: 3;
+  flex-grow: 2;
 }
 
 #article-post {
