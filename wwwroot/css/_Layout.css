@@ -114,6 +114,7 @@ footer {
 }
 .article-overview-title-author-category {
   flex-grow: 2;
+  width: 40%;
 }
 
 #article-post {
