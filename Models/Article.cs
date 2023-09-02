@@ -15,6 +15,7 @@ public class Article
 
     [ForeignKey(nameof(Author))]
     public string AuthorUserName{ get; set; }
+    
     public Author Author {get; set; }
 
     public string ContentFilePath { get; set; }
