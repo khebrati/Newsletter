@@ -36,7 +36,7 @@ namespace Pages
         
         public string Body { get; set; }
         
-        public Data.ArticleCategory Category { get; set; }
+        public Models.ArticleCategory Category { get; set; }
 
         
     }

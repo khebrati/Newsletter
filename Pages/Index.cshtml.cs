@@ -8,7 +8,7 @@ public class ArticleOverviewModel
 
     public string? ImageUrl { get; set; }
 
-    public Data.ArticleCategory Category { get; set; }
+    public Models.ArticleCategory Category { get; set; }
     //TODO: authentication
     public string AuthorName {
         get
@@ -34,22 +34,22 @@ public class IndexModel : PageModel
         new()
         {
             Title = "Introduction to ASP.NET Core",
-            Category = Data.ArticleCategory.Technology
+            Category = Models.ArticleCategory.Technology
         },
         new()
         {
             Title = "Healthy Eating Habits",
-            Category = Data.ArticleCategory.LifeStyle
+            Category = Models.ArticleCategory.LifeStyle
         },
         new()
         {
             Title = "The Wonders of Quantum Physics",
-            Category = Data.ArticleCategory.Science
+            Category = Models.ArticleCategory.Science
         },
         new()
         {
             Title = "Top 10 Soccer Goals of All Time",
-            Category = Data.ArticleCategory.Entertainment
+            Category = Models.ArticleCategory.Entertainment
         }
     };
 

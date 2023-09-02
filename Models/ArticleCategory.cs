@@ -1,4 +1,4 @@
-namespace Data;
+namespace Models;
 public enum ArticleCategory
 {
     NoCategory,
