@@ -5,6 +5,7 @@ namespace Main
     {
         public static void Main(string[] args)
         {
+            //TODO: initializing the database (only if there is no data)
             CreateHostBuilder(args).Build().Run();
         }
 

@@ -1,61 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Data;
+using Services;
 
 namespace Pages;
+
+public class IndexModel : PageModel
+{
+    private readonly WeblogService _service;
+    public IndexModel(WeblogService service)
+    {
+        _service = service;
+    }
+
+    public ArticleOverviewModel[] ArticleOverviews {get; set; }
+
+    public void OnGet()
+    {
+        ArticleOverviews = _service.GetAllArticleOverviews();
+
+    }
 public class ArticleOverviewModel
 {
     public string Title { get; set; }
 
     public string? ImageUrl { get; set; }
 
-    public Models.ArticleCategory Category { get; set; }
+    public Data.ArticleCategory Category { get; set; }
     //TODO: authentication
-    public string AuthorName {
-        get
-        {
-            return "A person";
-        }
-    }
-
-
+    public string AuthorUserName {get; set; }
 
 }
-public class IndexModel : PageModel
-{
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
-    {
-        _logger = logger;
-    }
-    //TODO: design the backend and connect it 
-    public ArticleOverviewModel[] Articles = new ArticleOverviewModel[]
-    {
-        new()
-        {
-            Title = "Introduction to ASP.NET Core",
-            Category = Models.ArticleCategory.Technology
-        },
-        new()
-        {
-            Title = "Healthy Eating Habits",
-            Category = Models.ArticleCategory.LifeStyle
-        },
-        new()
-        {
-            Title = "The Wonders of Quantum Physics",
-            Category = Models.ArticleCategory.Science
-        },
-        new()
-        {
-            Title = "Top 10 Soccer Goals of All Time",
-            Category = Models.ArticleCategory.Entertainment
-        }
-    };
-
-    public void OnGet()
-    {
-
-    }
 
 }

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 //TODO: find the tool to understand EF core modeling
-namespace Models;
+namespace Data;
 public class Article
 {
     public int ArticleId { get; set; }

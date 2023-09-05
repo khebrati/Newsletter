@@ -5,7 +5,7 @@
 }
 <div id="article-overviews-scroll">
     @{
-    foreach (var articleOverviewModel in Model.Articles)
+    foreach (var articleOverviewModel in Model.ArticleOverviews)
     {
         <partial name="/Pages/_ArticleOverview.cshtml" model="articleOverviewModel"></partial>
     }

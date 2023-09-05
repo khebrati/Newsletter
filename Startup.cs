@@ -17,6 +17,8 @@ namespace Main
 
             var connString = Configuration.GetConnectionString("DefaultConnection");
 
+            services.AddScoped<Services.WeblogService>();
+            
             services.AddDbContext<WeblogContext>(
                 options => options.UseSqlServer(connString) 
             );

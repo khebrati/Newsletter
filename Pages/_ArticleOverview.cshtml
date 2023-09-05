@@ -1,9 +1,9 @@
-@model Pages.ArticleOverviewModel
+@model Pages.IndexModel.ArticleOverviewModel
 <div class="article-overview">
     <div class="article-overview-title-author-category">
         <h3 class="article-overview-title">@Model.Title</h3>
     <div class="article-overview-author-category">
-        <h4 class="article-overview-author">By @Model.AuthorName</h4><span class="article-overview-category">@Model.Category</span>
+        <h4 class="article-overview-author">By @Model.AuthorUserName</h4><span class="article-overview-category">@Model.Category</span>
     </div>
     </div>
     @if (Model.ImageUrl is null)

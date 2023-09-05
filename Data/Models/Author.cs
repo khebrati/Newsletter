@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using Models;
+using Data;
 
 public class Author
 {
