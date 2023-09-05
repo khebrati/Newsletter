@@ -20,6 +20,4 @@ public class Article
 
     public string ContentFilePath { get; set; }
     
-    
-    
 }

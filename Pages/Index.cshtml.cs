@@ -29,6 +29,7 @@ public class ArticleOverviewModel
     public Data.ArticleCategory Category { get; set; }
     //TODO: authentication
     public string AuthorUserName {get; set; }
+    //TODO: add publish date to this and it's query
 
 }
 

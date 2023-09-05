@@ -14,4 +14,19 @@ public static class WeblogMapper
             }
         );
     }
+    public static IQueryable<ArticleWithContentPath> MapArticleWithContentPath(this IQueryable<Article> articles, int id)
+    {   
+        return articles.Where(a => a.ArticleId == id)
+        .Select(
+            a => new ArticleWithContentPath()
+            {
+                Title = a.Title,
+                Category = a.Category.ToString(),
+                AuthorUserName = a.AuthorUserName,
+                PublishDate = a.PublishDate,
+                ImageUrl = a.ImageUrl ?? "Images/no-image.webp",
+                ContentFilePath = a.ContentFilePath
+            }
+        );
+    }
 }
