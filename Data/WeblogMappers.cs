@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Pages;
 namespace Data;
 public static class WeblogMapper
@@ -12,7 +13,7 @@ public static class WeblogMapper
                 Category = article.Category,
                 AuthorUserName = article.Author.UserName
             }
-        );
+        ).AsNoTracking();
     }
     public static IQueryable<ArticleWithContentPath> MapArticleWithContentPath(this IQueryable<Article> articles, int id)
     {   
@@ -27,6 +28,6 @@ public static class WeblogMapper
                 ImageUrl = a.ImageUrl ?? "Images/no-image.webp",
                 ContentFilePath = a.ContentFilePath
             }
-        );
+        ).AsNoTracking();
     }
 }
